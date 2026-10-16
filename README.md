@@ -42,24 +42,13 @@ LawMadeSimple/
 
 ## Getting Started
 
-1. Download or clone this repository:
-   ```bash
-   git clone <your-repository-url>
-   ```
+1. Download or clone this repository
 2. Open the project folder.
 3. Make sure `index.html` and `project.css` are in the same folder.
 4. Open `index.html` in any web browser.
 
 No installation or build step is required.
 
-## Roadmap
-
-- [ ] Add descriptions for Constitutional Law and Criminal Law cards
-- [ ] Link each topic card to its own detailed page
-- [ ] Build the About and Contact sections
-- [ ] Add a working "Ask a question" form
-- [ ] Make the layout fully responsive for mobile screens
-- [ ] Add a Latin maxims glossary page
 
 ## Disclaimer
 
