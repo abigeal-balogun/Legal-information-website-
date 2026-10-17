@@ -38,6 +38,7 @@ Many people do not know their legal rights because the law is often written in c
 LawMadeSimple/
 ├── index.html      # Main page
 ├── project.css     # Styles
+    project.js      #Interaction
 └── README.md       # Project documentation
 ```
 
@@ -45,7 +46,7 @@ LawMadeSimple/
 
 1. Download or clone this repository
 2. Open the project folder.
-3. Make sure `index.html` and `project.css` are in the same folder.
+3. Make sure `index.html`,`project.css` and `project.js` are in the same folder.
 4. Open `index.html` in any web browser.
 
 No installation or build step is required.
