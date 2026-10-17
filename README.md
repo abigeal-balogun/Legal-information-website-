@@ -28,8 +28,9 @@ Many people do not know their legal rights because the law is often written in c
 
 ## Built With
 
-- HTML5
-- CSS3
+- HTML
+- CSS
+- JavaScript 
 
 ## Project Structure
 
