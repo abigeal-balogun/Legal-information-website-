@@ -76,7 +76,6 @@ body {
 }
 
 .container h1 {
-  font-size: clamp(2rem, 5vw, 3.6rem);
   max-width: 18ch;
   margin-bottom: 20px;
   color: white;
@@ -102,8 +101,7 @@ section h1{
 /* ---------- Cards Section ---------- */
 #cards {
   display: grid;
-  grid-template-columns: (1fr, 1fr, 1fr);
-    
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 16px 6% 72px;
 }
@@ -147,11 +145,8 @@ footer {
   section {
     padding-top: 44px;
   }
-}
-
-/* ---------- Reduced Motion Accessibility ---------- */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+  }   
 }
