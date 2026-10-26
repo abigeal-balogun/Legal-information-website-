@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 /* ---------- Body ---------- */
 body {
   font-family: "Public Sans", Arial, sans-serif;
@@ -46,36 +45,36 @@ body {
   text-decoration: none;
   font-weight: 500;
   padding: 4px 0;
-  border-bottom: 2px solid transparent;
 }
 
-.nav-links a:hover {
-  border-bottom-color: goldenrod;
-}
-
-.navbar button {
+/* ---------- Ask a question button ---------- */
+.ask-button {
+  display: inline-block;
   background: white;
   color: blue;
-  border-color: gold;
+  border: 2px solid gold;
   padding: 10px 20px;
   border-radius: 6px;
+  text-decoration: none;
   font: 600 0.95rem "Public Sans", Arial, sans-serif;
-  
 }
 
-.navbar button:hover {
-  background: white;
+/* ---------- Contact chat link ---------- */
+.chat-link {
+  color: blue;
+  font-weight: 600;
 }
 
-
+/* ---------- Hero ---------- */
 .container {
   background: navy;
   color: black;
   padding: 90px 6% 100px;
   border-color: lightgray;
+  text-align: left;
 }
 
-.container h1 {
+.container h2 {
   max-width: 18ch;
   margin-bottom: 20px;
   color: white;
@@ -84,37 +83,52 @@ body {
 .container p {
   max-width: 60ch;
   font-size: 1.1rem;
-  color: dimgray;
+  color: lightgray;
   border-left: 4px solid goldenrod;
   padding-left: 16px;
 }
 
-/* ---------- Section Headings ---------- */
+/* ---------- Sections ---------- */
 section {
   padding: 64px 6% 24px;
   text-align: center;
-  }
-section h1{
-  color : navy;
 }
 
-/* ---------- Cards Section ---------- */
+section h2 {
+  color: navy;
+  margin-bottom: 8px;
+}
+
+/* ---------- Cards ---------- */
 #cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 16px 6% 72px;
+  padding: 24px 0 48px;
+  text-align: left;
 }
 
 .cards-info {
+  display: block;
+  color: inherit;
+  text-decoration: none;
   background: white;
   border: 1px solid black;
   border-radius: 6px;
   padding: 24px;
   min-height: 140px;
 }
-.cards-info h1{
-    color: navy;
+
+.card-number {
+  display: block;
+  color: goldenrod;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cards-info h3 {
+  color: navy;
+  margin-bottom: 8px;
 }
 
 /* ---------- Footer ---------- */
@@ -123,9 +137,23 @@ footer {
   color: goldenrod;
   text-align: center;
   padding: 22px 6%;
+  margin-top: 48px;
 }
 
-/* ---------- Mobile Responsiveness ---------- */
+.disclaimer {
+  font-size: 0.85rem;
+  color: lightgray;
+  margin-bottom: 6px;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+  #cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Mobile ---------- */
 @media (max-width: 640px) {
   .navbar {
     flex-direction: column;
@@ -145,8 +173,9 @@ footer {
   section {
     padding-top: 44px;
   }
+
   #cards {
-    display: flex;
-    flex-wrap: wrap;
-  }   
-}
+    grid-template-columns: 1fr;
+  }
+  }
+
