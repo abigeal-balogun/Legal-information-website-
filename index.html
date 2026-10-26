@@ -2,66 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Legal Information Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawMadeSimple | Legal Information Website</title>
+    <link rel="stylesheet" href="law.css">
 </head>
 <body>
-    <link rel="stylesheet" href="project.css">
-    <nav class="navbar"> 
-        <div class="logo">
-            <h1>LawMadeSimple</h1>
-            <p>KnowYourRight | Understand the Law</p>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LawMadeSimple</h1>
+                <p>Know Your Rights | Understand the Law</p>
             </div>
             <ul class="nav-links">
-                <li><a href ="#Home">Home</a></li>
-                <li><a href ="#Topics">Topic</a></li>
-                <li><a href ="#About">About</a></li>
-                <li><a href ="#Contact">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Topics">Topics</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
-            <button id="question-button">Ask a question</button>
-        
-         <div id="question-box" hidden>
-  <textarea id="question-input" placeholder="What is bothering your mind?"></textarea>
-  <button id="submit-question">Submit</button>
-  <p id="thank-you" hidden>Thank you! Your question has been received.</p>
-  
-         </div>
-  </nav>
-  
-  <div class="container">
-      <h1>Know Your Legal Rights in Simple English</h1>
-      <p>Nigerian laws simplified. We provide easy to understand information about your right, legal concepts and Nigerian laws. No legal jargon, just the facts you need to know.</p>
-  </div>
-  <Section > 
-      <h1>Key Topics</h1>
-      <p>Browse common legal topics explained in simple English</p>
-      </Section>
-      
-      <div id="cards">
-          <div class="cards-info">
-              <h1>Family Law</h1>
-              <p>Marriage, divorce, child custody,and inheritance.</p>
-          </div>
-          <div class="cards-info">
-              <h1> Tenancy Law</h1>
-              <p>Rent, notice,eviction rules and tenant obligations.</p>
-          </div>
-          <div class="cards-info">
-              <h1>Employment Rights</h1>
-              <p>Contracts,wages,leave, termination and workplace protection.</p>
-          </div>
-          <div class="cards-info">
-              <h1>Constitutional Law</h1>
-          </div>
-          <div class ="cards-info">
-              <h1>Criminal Law</h1>
-          </div>
-          <div class ="cards-info">
-              <h1>Latin Maxim</h1>
-              <p>Latin Maxim explained clearly.</p>
-          </div>
-      </div> 
-  <footer>&copy 2026 Balogun Abigeal Oluwakemi</footer>
+            <a class="ask-button" href="https://wa.me/2349069363178?text=Hello%2C%20I%20have%20a%20legal%20question." target="_blank" rel="noopener noreferrer">Ask a question</a>
+        </nav>
+    </header>
 
-    <script src="project.js"><\script>
+    <main>
+        <section id="Home" class="container">
+            <h2>Know Your Legal Rights in Simple English</h2>
+            <p>Nigerian laws simplified. We explain your rights and legal concepts clearly, and you can reach out when you need more clarity. No legal jargon, just the facts you need to know.</p>
+        </section>
+
+        <section id="Topics">
+            <h2>Key Topics</h2>
+            <p>Tap a topic to chat with us on WhatsApp and get clarity.</p>
+
+            <div id="cards">
+                <a class="cards-info" data-topic="Family Law" href="https://wa.me/2349069363178" target="_blank" rel="noopener noreferrer">
+                    <span class="card-number">01</span>
+                    <h3>Family Law</h3>
+                    <p>Marriage, divorce, child custody, and inheritance.</p>
+                </a>
+                <a class="cards-info" data-topic="Tenancy Law" href="https://wa.me/2349069363178" target="_blank" rel="noopener noreferrer">
+                    <span class="card-number">02</span>
+                    <h3>Tenancy Law</h3>
+                    <p>Rent, notice, eviction rules, and tenant obligations.</p>
+                </a>
+                <a class="cards-info" data-topic="Employment Rights" href="https://wa.me/2349069363178" target="_blank" rel="noopener noreferrer">
+                    <span class="card-number">03</span>
+                    <h3>Employment Rights</h3>
+                    <p>Contracts, wages, leave, termination, and workplace protection.</p>
+                </a>
+                <a class="cards-info" data-topic="Constitutional Law" href="https://wa.me/2349069363178" target="_blank" rel="noopener noreferrer">
+                    <span class="card-number">04</span>
+                    <h3>Constitutional Law</h3>
+                    <p>Your fundamental rights under the Constitution.</p>
+                </a>
+                <a class="cards-info" data-topic="Criminal Law" href="https://wa.me/2349069363178" target="_blank" rel="noopener noreferrer">
+                    <span class="card-number">05</span>
+                    <h3>Criminal Law</h3>
+                    <p>Offences, arrest, bail, and your rights with the police.</p>
+                </a>
+                <a class="cards-info" data-topic="Latin Maxims" href="https://wa.me/2349069363178" target="_blank" rel="noopener noreferrer">
+                    <span class="card-number">06</span>
+                    <h3>Latin Maxims</h3>
+                    <p>Common Latin legal phrases explained clearly.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="About">
+            <h2>About</h2>
+            <p>LawMadeSimple helps Nigerians close the legal knowledge gap by explaining things clearly and answering your questions.</p>
+        </section>
+
+        <section id="Contact">
+            <h2>Contact</h2>
+            <p>Not sure where your issue fits? <a class="chat-link" href="https://wa.me/2349069363178?text=Hello%2C%20I%27d%20like%20to%20chat." target="_blank" rel="noopener noreferrer">Let's chat here</a> and we'll point you in the right direction.</p>
+        </section>
+    </main>
+
+    <footer>
+    <p class="disclaimer">General information only, not legal advice. For advice on your specific situation, speak to a qualified lawyer.</p>
+    <p>&copy; 2026 Balogun Abigeal Oluwakemi</p>
+</footer>
+    <script src="law.js"></script>
 </body>
-  </html>
+</html>
